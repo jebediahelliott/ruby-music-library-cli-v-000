@@ -70,7 +70,7 @@ class MusicLibraryController
     input = gets.strip.to_i
     if input > 0 && input <= Song.all.count
       song = Song.all.sort_by{ |song| song.name }[input -1]
-      puts "Playing #{song.name} by #{song.artist}"
+      puts "Playing #{song.name} by #{song.artist.name}"
     end
   end
 end
