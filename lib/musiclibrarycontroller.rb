@@ -60,7 +60,7 @@ class MusicLibraryController
     if input
       list = input.songs.sort_by{ |song| song.name }
       list.each_with_index do |song, i|
-      puts "#{i + 1}. #{song.name} - #{song.artist.name}"
+      puts "#{i + 1}. #{song.artist.name} - #{song.name}"
       end
     end
   end
