@@ -54,7 +54,7 @@ class MusicLibraryController
   end
 
   def list_songs_by_genre
-    puts "Please enter the name of an genre:"
+    puts "Please enter the name of a genre:"
     input = gets.strip
     input = Genre.all.detect{ |genre| genre.name == input}
     if input
